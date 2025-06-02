@@ -1,13 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Alberta Express Moving - Edmonton's most trusted movers. Get a free quote for local and long-distance moving services. Licensed, insured, and 5-star rated." />
+  <meta name="description" content="Alberta Express Moving - Edmonton's most trusted movers. Get a free quote for local and long-distance moving services. Licensed, insured, and 5-star rated.">
   <title>Edmonton Movers | Alberta Express Moving | Free Quotes</title>
-  
-  <!-- Google Analytics (GA4) -->
+
+  <!-- Google Analytics (replace G-XXXXXXX with your ID) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -17,83 +16,129 @@
   </script>
 
   <!-- Fonts & Icons -->
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
 
-  <!-- Add your existing styles below this line -->
+  <link rel="stylesheet" href="styles.css" />
   <style>
-    /* Your full CSS from previous file here */
+    /* You can paste your existing full CSS here or link to styles.css */
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f8f9fa;
+      color: #212529;
+    }
+
+    header {
+      background: linear-gradient(135deg, #002244 0%, #003366 100%);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem 4rem;
+    }
+
+    .cta-buttons a {
+      margin: 0.5rem;
+      text-decoration: none;
+      padding: 1rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .cta-button.primary { background: #00b14f; color: white; }
+    .cta-button.secondary { background: #ff6b00; color: white; }
+
+    .cta-button.primary:hover { background: #008c3a; }
+    .cta-button.secondary:hover { background: #e05d00; }
+
+    .form-section {
+      background: white;
+      margin: -3rem auto 3rem;
+      max-width: 700px;
+      padding: 2rem;
+      border-radius: 16px;
+      box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+      z-index: 1;
+      position: relative;
+    }
+
+    input, select, textarea {
+      width: 100%;
+      padding: 1rem;
+      margin-bottom: 1rem;
+      border: 2px solid #e9ecef;
+      border-radius: 8px;
+      font-size: 1rem;
+    }
+
+    button.btn {
+      background: #00b14f;
+      color: white;
+      padding: 1rem;
+      border: none;
+      font-size: 1rem;
+      font-weight: 600;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+
+    .services, .testimonials, .faq {
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+
+    footer {
+      background: #212529;
+      color: white;
+      padding: 3rem 1rem;
+      text-align: center;
+    }
+
+    .char-count.alert { color: #dc3545; }
   </style>
 </head>
 
 <body>
+
   <header>
     <div class="trust-badges">
-      <div class="trust-badge"><i class="fas fa-check-circle"></i> Licensed & Insured</div>
-      <div class="trust-badge"><i class="fas fa-star"></i> 5-Star Rated</div>
-      <div class="trust-badge"><i class="fas fa-map-marker-alt"></i> Local Edmonton Movers</div>
-    </div>
-    <div class="logo-wrapper">
-      <img src="AEM_Logo.png" alt="Alberta Express Moving Logo" class="logo" />
+      <div><i class="fas fa-check-circle"></i> Licensed & Insured</div>
+      <div><i class="fas fa-star"></i> 5-Star Rated</div>
+      <div><i class="fas fa-map-marker-alt"></i> Local Edmonton Movers</div>
     </div>
     <h1>Edmonton's Most Trusted Moving Company</h1>
     <p>Local & Long-Distance Moves in Edmonton | Fully Licensed & 5-Star Rated</p>
     <div class="cta-buttons">
-      <a href="tel:587-926-0337" class="cta-button secondary"><i class="fas fa-phone-alt"></i> Call Now: 587-926-0337</a>
+      <a href="tel:587-926-0337" class="cta-button secondary"><i class="fas fa-phone-alt"></i> Call Now</a>
       <a href="#quote-form" class="cta-button primary"><i class="fas fa-file-alt"></i> Get My Free Quote</a>
     </div>
   </header>
 
   <section class="form-section" id="quote-form">
     <h2>Request Your Free Moving Quote</h2>
-    <div class="response-time"><i class="fas fa-clock"></i> We guarantee to respond within 8 business hours</div>
-    <div class="guarantee-badge"><i class="fas fa-shield-alt"></i> No hidden fees - 100% transparent pricing</div>
     <form action="https://formsubmit.co/alberta.expressmoving@gmail.com" method="POST">
-      <div class="form-group">
-        <label for="full-name" class="form-label">Full Name</label>
-        <input type="text" id="full-name" name="Full Name" class="form-control" placeholder="John Smith" required autofocus />
-      </div>
-      <div class="form-group">
-        <label for="phone" class="form-label">Phone Number</label>
-        <input type="tel" id="phone" name="Phone" class="form-control" placeholder="(587) 555-1234" required />
-      </div>
-      <div class="form-group">
-        <label for="email" class="form-label">Email Address</label>
-        <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" />
-      </div>
-      <div class="form-group">
-        <label for="moving-date" class="form-label">Moving Date</label>
-        <input type="date" id="moving-date" name="Moving Date" class="form-control" required />
-      </div>
-      <div class="form-group">
-        <label for="from-address" class="form-label">Moving From (Address)</label>
-        <input type="text" id="from-address" name="From Address" class="form-control" placeholder="123 Main St, Edmonton" required />
-      </div>
-      <div class="form-group">
-        <label for="to-address" class="form-label">Moving To (Address)</label>
-        <input type="text" id="to-address" name="To Address" class="form-control" placeholder="456 Oak Ave, Edmonton" required />
-      </div>
-      <div class="form-group">
-        <label for="bedrooms" class="form-label">Number of Bedrooms</label>
-        <select id="bedrooms" name="Bedrooms" class="form-control" required>
-          <option value="">Select an option</option>
-          <option value="1 Bedroom">1 Bedroom</option>
-          <option value="2 Bedrooms">2 Bedrooms</option>
-          <option value="3 Bedrooms">3 Bedrooms</option>
-          <option value="4+ Bedrooms">4+ Bedrooms</option>
-        </select>
-      </div>
-      <div class="notes-section">
-        <div class="notes-header">
-          <span class="notes-label"><i class="fas fa-edit"></i> Additional Notes</span>
-          <span id="char-count" class="char-count"><span id="char-remaining">1000</span> characters remaining</span>
-        </div>
-        <p class="notes-placeholder">
-          Let us know about special requirements, fragile items, parking restrictions, elevator access, or any other details that will help us serve you better.
-        </p>
-        <textarea id="notes" name="Comments" class="notes-textarea" maxlength="1000" oninput="updateCharCount(this)"></textarea>
-      </div>
+      <input type="text" name="Full Name" placeholder="Full Name" required autofocus>
+      <input type="tel" name="Phone" placeholder="Phone Number" required>
+      <input type="email" name="email" placeholder="Email Address">
+      <input type="date" name="Moving Date" required>
+      <input type="text" name="From Address" placeholder="Moving From (Address)" required>
+      <input type="text" name="To Address" placeholder="Moving To (Address)" required>
+      <select name="Bedrooms" required>
+        <option value=\"\">Number of Bedrooms</option>
+        <option value=\"1 Bedroom\">1 Bedroom</option>
+        <option value=\"2 Bedrooms\">2 Bedrooms</option>
+        <option value=\"3 Bedrooms\">3 Bedrooms</option>
+        <option value=\"4+ Bedrooms\">4+ Bedrooms</option>
+      </select>
+      <label for="notes">Additional Notes:</label>
+      <textarea id="notes" name="Comments" maxlength="1000" oninput="updateCharCount(this)"></textarea>
+      <p class="char-count" id="char-count"><span id="char-remaining">1000</span> characters remaining</p>
       <button type="submit" class="btn"><i class="fas fa-paper-plane"></i> Get My Free Quote</button>
+
+      <!-- Hidden form fields for spam protection and redirect -->
       <input type="text" name="_honey" style="display:none">
       <input type="hidden" name="_next" value="https://gunsboy77.github.io/AlbertaExpressMoving/thanks.html">
       <input type="hidden" name="_captcha" value="false">
@@ -101,58 +146,46 @@
   </section>
 
   <section class="services" id="services">
-    <!-- Same as before -->
+    <h2>Our Services</h2>
+    <p>Residential, Commercial, Packing Services</p>
   </section>
 
   <section class="testimonials" id="testimonials">
-    <!-- Same as before -->
+    <h2>What Our Customers Say</h2>
+    <blockquote>\"Fast, reliable and super careful with our belongings.\" – Amanda G.</blockquote>
   </section>
 
   <section class="faq" id="faq">
-    <!-- Same as before -->
+    <h2>Frequently Asked Questions</h2>
+    <p><strong>How much does it cost?</strong> Most moves cost $300–$800 depending on size and distance.</p>
   </section>
 
   <footer>
-    <!-- Same as before -->
+    <p>&copy; 2025 Alberta Express Moving – Serving Edmonton and surrounding areas.</p>
+    <a href="#services">Services</a> |
+    <a href="#testimonials">Reviews</a> |
+    <a href="#faq">FAQ</a>
   </footer>
 
   <script>
     function updateCharCount(textarea) {
       const remaining = 1000 - textarea.value.length;
-      const charCount = document.getElementById('char-count');
-      const charRemaining = document.getElementById('char-remaining');
-      charRemaining.textContent = remaining;
+      document.getElementById('char-remaining').textContent = remaining;
+      const countEl = document.getElementById('char-count');
       if (remaining < 100) {
-        charCount.classList.add('alert');
+        countEl.classList.add('alert');
       } else {
-        charCount.classList.remove('alert');
+        countEl.classList.remove('alert');
       }
     }
 
-    document.querySelectorAll('.faq-question').forEach(question => {
-      question.addEventListener('click', () => {
-        const item = question.parentElement;
-        item.classList.toggle('active');
-      });
-    });
-
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    document.querySelectorAll('a[href^=\"#\"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {
         e.preventDefault();
-        const targetId = this.getAttribute('href');
-        if (targetId === '#') return;
-        const targetElement = document.querySelector(targetId);
-        if (targetElement) {
-          window.scrollTo({ top: targetElement.offsetTop - 20, behavior: 'smooth' });
-        }
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) window.scrollTo({ top: target.offsetTop - 20, behavior: 'smooth' });
       });
-    });
-
-    document.addEventListener('DOMContentLoaded', function () {
-      const textarea = document.getElementById('notes');
-      if (textarea) updateCharCount(textarea);
     });
   </script>
 </body>
-
 </html>
