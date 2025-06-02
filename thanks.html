@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Thank You | Alberta Express Moving</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #002244;
+      --primary-light: #003366;
+      --secondary: #00b14f;
+      --secondary-dark: #008c3a;
+      --accent: #ff6b00;
+      --accent-dark: #e05d00;
+      --light: #f8f9fa;
+      --lighter: #ffffff;
+      --dark: #212529;
+      --gray: #6c757d;
+      --light-gray: #e9ecef;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+      --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+      --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+    }
+    
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+      position: relative;
+      box-shadow: var(--shadow-md);
+    }
+    
+    .logo-wrapper {
+      background: white;
+      padding: 1.5rem;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      box-shadow: var(--shadow-lg);
+      transition: var(--transition);
+    }
+    
+    .logo {
+      height: 80px;
+      width: auto;
+      display: block;
+    }
+    
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+      font-weight: 700;
+      text-shadow: 1px 1px 3px rgba(0,0,0,0.3);
+    }
+    
+    .confirmation-section {
+      background: var(--lighter);
+      max-width: 700px;
+      margin: 3rem auto;
+      padding: 3rem;
+      box-shadow: var(--shadow-lg);
+      border-radius: 16px;
+      text-align: center;
+    }
+    
+    .confirmation-icon {
+      width: 80px;
+      height: 80px;
+      background: rgba(0,177,79,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 2rem;
+      color: var(--secondary);
+      font-size: 2.5rem;
+    }
+    
+    .confirmation-section h2 {
+      color: var(--primary);
+      margin-bottom: 1.5rem;
+      font-size: 1.8rem;
+    }
+    
+    .confirmation-section p {
+      color: var(--gray);
+      margin-bottom: 2rem;
+      line-height: 1.7;
+    }
+    
+    .next-steps {
+      text-align: left;
+      max-width: 500px;
+      margin: 2rem auto;
+    }
+    
+    .next-steps h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .next-steps ul {
+      list-style: none;
+    }
+    
+    .next-steps li {
+      margin-bottom: 1rem;
+      padding-left: 2rem;
+      position: relative;
+      line-height: 1.6;
+    }
+    
+    .next-steps li::before {
+      content: '\f00c';
+      font-family: 'Font Awesome 6 Free';
+      font-weight: 900;
+      color: var(--secondary);
+      position: absolute;
+      left: 0;
+    }
+    
+    .contact-info {
+      background: rgba(0,177,79,0.05);
+      padding: 1.5rem;
+      border-radius: 12px;
+      margin-top: 2rem;
+      border-left: 4px solid var(--secondary);
+    }
+    
+    .contact-info p {
+      margin-bottom: 0.5rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .btn {
+      background: var(--secondary);
+      color: white;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      font-size: 1.1rem;
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      text-decoration: none;
+      margin-top: 1rem;
+    }
+    
+    .btn:hover {
+      background: var(--secondary-dark);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+    
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 3rem 1rem 2rem;
+    }
+    
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .footer-logo {
+      margin-bottom: 2rem;
+    }
+    
+    .footer-logo .logo-wrapper {
+      background: white;
+      padding: 1rem;
+      border-radius: 12px;
+      display: inline-block;
+    }
+    
+    .footer-logo .logo {
+      height: 60px;
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 1.5rem;
+      margin: 1.5rem 0;
+    }
+    
+    .social-link {
+      width: 45px;
+      height: 45px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.2rem;
+      transition: var(--transition);
+    }
+    
+    .social-link:hover {
+      background: var(--secondary);
+      transform: translateY(-3px);
+    }
+    
+    .copyright {
+      margin-top: 2rem;
+      opacity: 0.8;
+      font-size: 0.9rem;
+    }
+    
+    @media (max-width: 768px) {
+      header {
+        padding: 2rem 1rem;
+      }
+      
+      header h1 {
+        font-size: 2rem;
+      }
+      
+      .confirmation-section {
+        padding: 2rem;
+        margin: 2rem auto;
+      }
+      
+      .confirmation-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="logo-wrapper">
+    <img src="AEM_Logo.png" alt="Alberta Express Moving Logo" class="logo">
+  </div>
+  <h1>Thank You for Your Request</h1>
+</header>
+
+<section class="confirmation-section">
+  <div class="confirmation-icon">
+    <i class="fas fa-check"></i>
+  </div>
+  <h2>Your Moving Quote Request Has Been Received</h2>
+  <p>We've received your information and will contact you within 8 business hours with your free moving quote.</p>
+  
+  <div class="next-steps">
+    <h3><i class="fas fa-clipboard-list"></i> What Happens Next?</h3>
+    <ul>
+      <li>Our moving specialist will review your request</li>
+      <li>We'll contact you to confirm details and answer any questions</li>
+      <li>You'll receive a detailed, no-obligation quote</li>
+      <li>We'll schedule your move at your convenience</li>
+    </ul>
+  </div>
+  
+  <div class="contact-info">
+    <p><i class="fas fa-phone"></i> <strong>Need immediate assistance?</strong></p>
+    <p>Call us directly at <a href="tel:587-938-1992" style="color: var(--primary); font-weight: 600; text-decoration: none;">587-938-1992</a></p>
+    <p><i class="fas fa-clock"></i> Monday-Saturday: 7:00 AM - 9:00 PM</p>
+  </div>
+  
+  <a href="index.html" class="btn">
+    <i class="fas fa-home"></i> Back to Home
+  </a>
+</section>
+
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <div class="logo-wrapper">
+        <img src="AEM_Logo.png" alt="Alberta Express Moving Logo" class="logo">
+      </div>
+    </div>
+    
+    <div class="social-links">
+      <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-google"></i></a>
+    </div>
+    
+    <div class="copyright">
+      &copy; 2025 Alberta Express Moving. All rights reserved.<br>
+      Serving Edmonton and surrounding areas.
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
