@@ -1,0 +1,965 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edmonton Movers | Alberta Express Moving | Free Quotes & Same-Day Service</title>
+    <meta name="description" content="Professional Edmonton movers with 5-star reviews. Free quotes, same-day service available. Licensed & insured. Call (780) 123-4567 for instant quote!">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, #1e3c72 0%, #2a5298 100%);
+            color: white;
+            padding: 1rem 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .header-content {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+
+        .contact-info {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+        }
+
+        .phone-number {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .cta-button {
+            background: #ff6b35;
+            color: white;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            border: none;
+            cursor: pointer;
+        }
+
+        .cta-button:hover {
+            background: #e55a2b;
+            transform: translateY(-2px);
+        }
+
+        /* Urgent Banner */
+        .urgent-banner {
+            background: linear-gradient(90deg, #ff6b35, #ff8c42);
+            color: white;
+            text-align: center;
+            padding: 10px;
+            font-weight: bold;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { opacity: 1; }
+            50% { opacity: 0.8; }
+            100% { opacity: 1; }
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, rgba(30,60,114,0.9), rgba(42,82,152,0.9)), url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600"><rect fill="%23f0f4f8" width="1200" height="600"/><polygon fill="%23dbe7f0" points="0,400 300,350 600,450 900,300 1200,400 1200,600 0,600"/></svg>');
+            color: white;
+            padding: 80px 0;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>') repeat;
+            animation: float 20s linear infinite;
+        }
+
+        @keyframes float {
+            0% { transform: translateY(0px); }
+            100% { transform: translateY(-100px); }
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 1rem;
+            font-weight: bold;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero p {
+            font-size: 1.3rem;
+            margin-bottom: 2rem;
+            opacity: 0.9;
+        }
+
+        .hero-stats {
+            display: flex;
+            justify-content: center;
+            gap: 3rem;
+            margin: 2rem 0;
+        }
+
+        .stat {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #ffd700;
+        }
+
+        .stat-label {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Quote Form */
+        .quote-form {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.2);
+            max-width: 500px;
+            margin: 2rem auto;
+        }
+
+        .quote-form h3 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+
+        .form-group {
+            margin-bottom: 1rem;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 0.5rem;
+            color: #555;
+            font-weight: bold;
+        }
+
+        .form-group input,
+        .form-group select,
+        .form-group textarea {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-group input:focus,
+        .form-group select:focus,
+        .form-group textarea:focus {
+            outline: none;
+            border-color: #2a5298;
+        }
+
+        .form-row {
+            display: flex;
+            gap: 1rem;
+        }
+
+        .form-row .form-group {
+            flex: 1;
+        }
+
+        /* Services Section */
+        .services {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #1e3c72;
+            margin-bottom: 3rem;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .service-icon {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+
+        .service-card h3 {
+            color: #1e3c72;
+            margin-bottom: 1rem;
+        }
+
+        .price-tag {
+            background: #ff6b35;
+            color: white;
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 1rem;
+        }
+
+        /* Testimonials */
+        .testimonials {
+            padding: 80px 0;
+            background: linear-gradient(135deg, #1e3c72, #2a5298);
+            color: white;
+        }
+
+        .testimonials-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .testimonial {
+            background: rgba(255,255,255,0.1);
+            padding: 2rem;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+        }
+
+        .testimonial-stars {
+            color: #ffd700;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .testimonial-author {
+            font-weight: bold;
+            margin-top: 1rem;
+        }
+
+        /* Trust Indicators */
+        .trust-indicators {
+            padding: 60px 0;
+            background: white;
+            text-align: center;
+        }
+
+        .trust-grid {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+            flex-wrap: wrap;
+        }
+
+        .trust-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .trust-icon {
+            font-size: 2rem;
+            color: #28a745;
+        }
+
+        /* Contact Section */
+        .contact {
+            padding: 80px 0;
+            background: #f8f9fa;
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+
+        .contact-info {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .contact-icon {
+            font-size: 1.5rem;
+            color: #2a5298;
+        }
+
+        /* Footer */
+        .footer {
+            background: #1e3c72;
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+        }
+
+        /* Floating Action Buttons */
+        .floating-actions {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            z-index: 1000;
+        }
+
+        .floating-btn {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-decoration: none;
+            color: white;
+            font-size: 1.5rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            transition: transform 0.3s ease;
+        }
+
+        .floating-btn:hover {
+            transform: scale(1.1);
+        }
+
+        .phone-btn {
+            background: #28a745;
+        }
+
+        .whatsapp-btn {
+            background: #25d366;
+        }
+
+        .chat-btn {
+            background: #007bff;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2.5rem;
+            }
+            
+            .hero-stats {
+                flex-direction: column;
+                gap: 1rem;
+            }
+            
+            .form-row {
+                flex-direction: column;
+            }
+            
+            .contact-grid {
+                grid-template-columns: 1fr;
+            }
+            
+            .header-content {
+                flex-direction: column;
+                gap: 1rem;
+            }
+        }
+
+        /* Live Chat Widget */
+        .chat-widget {
+            position: fixed;
+            bottom: 100px;
+            right: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.2);
+            width: 300px;
+            z-index: 1000;
+            display: none;
+        }
+
+        .chat-widget.active {
+            display: block;
+        }
+
+        .chat-header {
+            background: #2a5298;
+            color: white;
+            padding: 1rem;
+            border-radius: 15px 15px 0 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .chat-body {
+            padding: 1rem;
+        }
+
+        .chat-message {
+            background: #f0f0f0;
+            padding: 0.5rem;
+            border-radius: 10px;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 4px;
+            background: #ddd;
+            border-radius: 2px;
+            overflow: hidden;
+            margin: 1rem 0;
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: linear-gradient(90deg, #ff6b35, #ffd700);
+            width: 0;
+            transition: width 0.3s ease;
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <div class="logo">🚚 Alberta Express Moving</div>
+                <div class="contact-info">
+                    <div class="phone-number">📞 (780) 123-4567</div>
+                    <a href="#quote" class="cta-button">Free Instant Quote</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Urgent Banner -->
+    <div class="urgent-banner">
+        ⚡ BOOK TODAY & SAVE 15% - Limited Time Offer! Same-Day Service Available ⚡
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container">
+            <h1>Edmonton's #1 Moving Company</h1>
+            <p>Professional, Licensed & Insured Movers - Get Your Free Quote in 30 Seconds!</p>
+            
+            <div class="hero-stats">
+                <div class="stat">
+                    <div class="stat-number">500+</div>
+                    <div class="stat-label">Happy Customers</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">4.9★</div>
+                    <div class="stat-label">Google Rating</div>
+                </div>
+                <div class="stat">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Available</div>
+                </div>
+            </div>
+
+            <!-- Main Quote Form -->
+            <div class="quote-form" id="quote">
+                <h3>💰 Get Your Instant Moving Quote</h3>
+                <div class="progress-bar">
+                    <div class="progress-fill" id="progressFill"></div>
+                </div>
+                <form id="quoteForm">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Moving From:</label>
+                            <input type="text" name="from" placeholder="Current Address" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Moving To:</label>
+                            <input type="text" name="to" placeholder="New Address" required>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label>Home Size:</label>
+                            <select name="size" required>
+                                <option value="">Select Size</option>
+                                <option value="studio">Studio Apartment</option>
+                                <option value="1br">1 Bedroom</option>
+                                <option value="2br">2 Bedroom</option>
+                                <option value="3br">3 Bedroom</option>
+                                <option value="4br">4+ Bedroom</option>
+                                <option value="office">Office</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label>Moving Date:</label>
+                            <input type="date" name="date" required>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Phone Number:</label>
+                        <input type="tel" name="phone" placeholder="(780) 123-4567" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Email Address:</label>
+                        <input type="email" name="email" placeholder="your@email.com" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label>Special Instructions (Optional):</label>
+                        <textarea name="instructions" rows="3" placeholder="Piano, fragile items, stairs, etc."></textarea>
+                    </div>
+
+                    <button type="submit" class="cta-button" style="width: 100%; font-size: 1.1rem; padding: 15px;">
+                        🚀 Get My Free Quote Now!
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services">
+        <div class="container">
+            <h2 class="section-title">Our Moving Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🏠</div>
+                    <h3>Residential Moving</h3>
+                    <p>Complete apartment and house moving services with careful handling of all your belongings.</p>
+                    <div class="price-tag">Starting at $299</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🏢</div>
+                    <h3>Office Moving</h3>
+                    <p>Professional office relocations with minimal business disruption. Evening and weekend service available.</p>
+                    <div class="price-tag">Starting at $399</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📦</div>
+                    <h3>Packing Services</h3>
+                    <p>Professional packing with high-quality materials. Full or partial packing services available.</p>
+                    <div class="price-tag">Starting at $149</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🚛</div>
+                    <h3>Long Distance</h3>
+                    <p>Reliable long-distance moving across Alberta and Western Canada with full insurance coverage.</p>
+                    <div class="price-tag">Custom Quote</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">⚡</div>
+                    <h3>Emergency Moving</h3>
+                    <p>Same-day and next-day moving services available. Perfect for urgent relocations.</p>
+                    <div class="price-tag">Starting at $449</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">📋</div>
+                    <h3>Storage Solutions</h3>
+                    <p>Secure, climate-controlled storage options for short-term and long-term needs.</p>
+                    <div class="price-tag">Starting at $99/month</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Trust Indicators -->
+    <section class="trust-indicators">
+        <div class="container">
+            <h2 class="section-title">Why Choose Alberta Express?</h2>
+            <div class="trust-grid">
+                <div class="trust-item">
+                    <div class="trust-icon">✅</div>
+                    <div>
+                        <strong>Licensed & Insured</strong><br>
+                        Full liability coverage
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🏆</div>
+                    <div>
+                        <strong>BBB A+ Rating</strong><br>
+                        Certified business
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">💰</div>
+                    <div>
+                        <strong>Price Match Guarantee</strong><br>
+                        Best rates in Edmonton
+                    </div>
+                </div>
+                <div class="trust-item">
+                    <div class="trust-icon">🕐</div>
+                    <div>
+                        <strong>On-Time Guarantee</strong><br>
+                        Punctual service promise
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+        <div class="container">
+            <h2 class="section-title">What Our Customers Say</h2>
+            <div class="testimonials-grid">
+                <div class="testimonial">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Alberta Express made my move completely stress-free. The team was fast, polite, and very affordable. They handled all my fragile items with care and even helped with some last-minute packing."</p>
+                    <div class="testimonial-author">- Sarah M., Edmonton</div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"I recently used Alberta Express Moving Company for my move, and I couldn't be happier! From the beginning, their team was kind, on time, and worked very quickly. They took great care of my things and made sure everything got to my new home safely."</p>
+                    <div class="testimonial-author">- Mike D., Sherwood Park</div>
+                </div>
+
+                <div class="testimonial">
+                    <div class="testimonial-stars">⭐⭐⭐⭐⭐</div>
+                    <p>"Professional movers who truly care about your belongings. They went above and beyond to make sure everything arrived safely. The crew was punctual, efficient, and careful with all my furniture."</p>
+                    <div class="testimonial-author">- Jennifer K., St. Albert</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="contact">
+        <div class="container">
+            <h2 class="section-title">Contact Us Today</h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <h3>Get In Touch</h3>
+                    <div class="contact-item">
+                        <div class="contact-icon">📞</div>
+                        <div>
+                            <strong>Call or Text:</strong><br>
+                            (780) 123-4567
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📧</div>
+                        <div>
+                            <strong>Email:</strong><br>
+                            info@albertaexpressmoving.com
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">🕐</div>
+                        <div>
+                            <strong>Hours:</strong><br>
+                            Mon-Sun: 7AM - 9PM
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">📍</div>
+                        <div>
+                            <strong>Service Areas:</strong><br>
+                            Edmonton, Sherwood Park, St. Albert, Spruce Grove, Leduc
+                        </div>
+                    </div>
+                </div>
+
+                <div class="quote-form">
+                    <h3>Quick Contact Form</h3>
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <label>Full Name:</label>
+                            <input type="text" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Phone Number:</label>
+                            <input type="tel" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email:</label>
+                            <input type="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Message:</label>
+                            <textarea name="message" rows="4" placeholder="Tell us about your moving needs..." required></textarea>
+                        </div>
+                        <button type="submit" class="cta-button" style="width: 100%;">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 Alberta Express Moving. Licensed & Insured Moving Company. All rights reserved.</p>
+            <p>Serving Edmonton and surrounding areas with professional moving services since 2018.</p>
+        </div>
+    </footer>
+
+    <!-- Floating Action Buttons -->
+    <div class="floating-actions">
+        <a href="tel:+17801234567" class="floating-btn phone-btn" title="Call Now">📞</a>
+        <a href="https://wa.me/17801234567" class="floating-btn whatsapp-btn" title="WhatsApp">💬</a>
+        <button class="floating-btn chat-btn" onclick="toggleChat()" title="Live Chat">💬</button>
+    </div>
+
+    <!-- Chat Widget -->
+    <div class="chat-widget" id="chatWidget">
+        <div class="chat-header">
+            <strong>Live Chat Support</strong>
+            <button onclick="toggleChat()" style="background: none; border: none; color: white; font-size: 1.2rem;">&times;</button>
+        </div>
+        <div class="chat-body">
+            <div class="chat-message">
+                <strong>Alberta Express:</strong> Hi! How can we help you today? We're available to provide instant moving quotes and answer any questions!
+            </div>
+            <div class="chat-message">
+                <strong>Alberta Express:</strong> Average response time: Under 2 minutes ⚡
+            </div>
+            <div style="display: flex; gap: 0.5rem; margin-top: 1rem;">
+                <button onclick="quickResponse('quote')" style="flex: 1; padding: 0.5rem; border: 1px solid #ddd; border-radius: 5px; background: white;">Get Quote</button>
+                <button onclick="quickResponse('schedule')" style="flex: 1; padding: 0.5rem; border: 1px solid #ddd; border-radius: 5px; background: white;">Schedule Move</button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Progress bar animation
+        const form = document.getElementById('quoteForm');
+        const progressFill = document.getElementById('progressFill');
+        const inputs = form.querySelectorAll('input, select, textarea');
+
+        function updateProgress() {
+            const totalFields = inputs.length;
+            let filledFields = 0;
+            
+            inputs.forEach(input => {
+                if (input.value.trim() !== '') {
+                    filledFields++;
+                }
+            });
+            
+            const progress = (filledFields / totalFields) * 100;
+            progressFill.style.width = progress + '%';
+        }
+
+        inputs.forEach(input => {
+            input.addEventListener('input', updateProgress);
+        });
+
+        // Form submission
+        form.addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! We\'ll contact you within 10 minutes with your free quote.');
+        });
+
+        document.getElementById('contactForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Thank you! We\'ll respond to your message within 30 minutes.');
+        });
+
+        // Chat widget
+        function toggleChat() {
+            const chatWidget = document.getElementById('chatWidget');
+            chatWidget.classList.toggle('active');
+        }
+
+        function quickResponse(type) {
+            if (type === 'quote') {
+                document.getElementById('quote').scrollIntoView({ behavior: 'smooth' });
+                toggleChat();
+            } else if (type === 'schedule') {
+                alert('Redirecting to our booking calendar...');
+            }
+        }
+
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Auto-fill current date
+        const dateInput = document.querySelector('input[type="date"]');
+        if (dateInput) {
+            const today = new Date();
+            const tomorrow = new Date(today);
+            tomorrow.setDate(tomorrow.getDate() + 1);
+            dateInput.min = tomorrow.toISOString().split('T')[0];
+            dateInput.value = tomorrow.toISOString().split('T')[0];
+        }
+
+        // Exit intent popup
+        let exitIntentShown = false;
+        document.addEventListener('mouseleave', function(e) {
+            if (e.clientY <= 0 && !exitIntentShown) {
+                exitIntentShown = true;
+                if (confirm('Wait! Before you go - Get 15% off your move with our exclusive web discount. Click OK to claim your discount!')) {
+                    document.getElementById('quote').scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+
+        // Phone number formatting
+        const phoneInputs = document.querySelectorAll('input[type="tel"]');
+        phoneInputs.forEach(input => {
+            input.addEventListener('input', function(e) {
+                let value = e.target.value.replace(/\D/g, '');
+                if (value.length >= 6) {
+                    value = `(${value.slice(0,3)}) ${value.slice(3,6)}-${value.slice(6,10)}`;
+                } else if (value.length >= 3) {
+                    value = `(${value.slice(0,3)}) ${value.slice(3)}`;
+                }
+                e.target.value = value;
+            });
+        });
+
+        // Animate stats on scroll
+        function animateStats() {
+            const stats = document.querySelectorAll('.stat-number');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const target = parseInt(entry.target.textContent);
+                        let current = 0;
+                        const increment = target / 50;
+                        const timer = setInterval(() => {
+                            current += increment;
+                            if (current >= target) {
+                                entry.target.textContent = target + (entry.target.textContent.includes('★') ? '★' : entry.target.textContent.includes('+') ? '+' : '');
+                                clearInterval(timer);
+                            } else {
+                                entry.target.textContent = Math.floor(current);
+                            }
+                        }, 50);
+                        observer.unobserve(entry.target);
+                    }
+                });
+            });
+            
+            stats.forEach(stat => observer.observe(stat));
+        }
+
+        // Initialize animations when page loads
+        window.addEventListener('load', () => {
+            animateStats();
+            
+            // Show urgent banner for 10 seconds
+            setTimeout(() => {
+                const banner = document.querySelector('.urgent-banner');
+                if (banner) {
+                    banner.style.transform = 'translateY(-100%)';
+                    banner.style.transition = 'transform 0.5s ease';
+                }
+            }, 10000);
+        });
+
+        // Track form engagement
+        let formEngagement = {
+            started: false,
+            completed: false,
+            timeSpent: 0
+        };
+
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                if (!formEngagement.started) {
+                    formEngagement.started = true;
+                    formEngagement.startTime = Date.now();
+                }
+            });
+        });
+
+        // Local storage for form data (remember: this won't work in Claude.ai artifacts)
+        // This is just for demonstration - in production, you'd want to use a backend service
+        function saveFormData() {
+            const formData = new FormData(form);
+            const data = {};
+            for (let [key, value] of formData.entries()) {
+                data[key] = value;
+            }
+            // In a real application, you'd send this to your server
+            console.log('Form data to save:', data);
+        }
+
+        // Auto-save form data every 30 seconds
+        setInterval(() => {
+            if (formEngagement.started && !formEngagement.completed) {
+                saveFormData();
+            }
+        }, 30000);
+    </script>
+</body>
+</html>
