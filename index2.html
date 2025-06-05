@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -17,49 +18,6 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-  <style>
-    :root {
-      --primary: #002244;
-      --primary-light: #003366;
-      --secondary: #00b14f;
-      --secondary-dark: #008c3a;
-      --accent: #ff6b00;
-      --accent-dark: #e05d00;
-      --light: #f8f9fa;
-      --lighter: #ffffff;
-      --dark: #212529;
-      --gray: #6c757d;
-      --light-gray: #e9ecef;
-      --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
-      --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
-      --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
-      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
-    }
-    /* rest of the original styles remain untouched */
-  </style>
-  <script type="application/ld+json">
-    {
-      "@context": "http://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Alberta Express Moving",
-      "image": "https://albertaexpressmoving.com/wp-content/uploads/2023/04/logo-200.png",
-      "@id": "https://albertaexpressmoving.com",
-      "url": "https://albertaexpressmoving.com",
-      "telephone": "+15879260337",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Edmonton",
-        "addressLocality": "Edmonton",
-        "addressRegion": "AB",
-        "postalCode": "T5A",
-        "addressCountry": "CA"
-      },
-      "sameAs": [
-        "https://www.facebook.com/albertaexpressmoving",
-        "https://www.instagram.com/albertaexpressmoving"
-      ]
-    }
-  </script>
 </head>
 <body>
 
@@ -69,17 +27,10 @@
 
 <header>
   <div class="trust-badges">
-    <div class="trust-badge">
-      <i class="fas fa-check-circle"></i> Licensed & Insured
-    </div>
-    <div class="trust-badge">
-      <i class="fas fa-star"></i> 5-Star Rated
-    </div>
-    <div class="trust-badge">
-      <i class="fas fa-map-marker-alt"></i> Local Edmonton Movers
-    </div>
+    <div class="trust-badge"><i class="fas fa-check-circle"></i> Licensed & Insured</div>
+    <div class="trust-badge"><i class="fas fa-star"></i> 5-Star Rated</div>
+    <div class="trust-badge"><i class="fas fa-map-marker-alt"></i> Local Edmonton Movers</div>
   </div>
-
   <div class="logo-wrapper">
     <img src="AEM_Logo.png" alt="Alberta Express Moving Logo" class="logo">
   </div>
@@ -97,25 +48,29 @@
 
 <section class="form-section" id="quote-form">
   <h2>Request Your Free Moving Quote</h2>
-  <div class="response-time">
-    <i class="fas fa-clock"></i> We guarantee to respond within 8 business hours
-  </div>
-  <div class="guarantee-badge">
-    <i class="fas fa-shield-alt"></i> No hidden fees - 100% transparent pricing
-  </div>
+  <div class="response-time"><i class="fas fa-clock"></i> We guarantee to respond within 8 business hours</div>
+  <div class="guarantee-badge"><i class="fas fa-shield-alt"></i> No hidden fees - 100% transparent pricing</div>
   <form action="https://formsubmit.co/alberta.expressmoving@gmail.com" method="POST" onsubmit="dataLayer.push({event: 'form_submit'});">
-    <!-- all form fields unchanged -->
-    <!-- ... -->
-    <button type="submit" class="btn">
-      <i class="fas fa-paper-plane"></i> Get My Free Quote
-    </button>
+    <input type="text" name="Full Name" required placeholder="Full Name" />
+    <input type="tel" name="Phone" required placeholder="Phone Number" />
+    <input type="email" name="email" placeholder="Email Address" />
+    <input type="date" name="Moving Date" required />
+    <input type="text" name="From Address" required placeholder="Moving From Address" />
+    <input type="text" name="To Address" required placeholder="Moving To Address" />
+    <select name="Bedrooms" required>
+      <option value="">Select Bedrooms</option>
+      <option value="1 Bedroom">1 Bedroom</option>
+      <option value="2 Bedrooms">2 Bedrooms</option>
+      <option value="3 Bedrooms">3 Bedrooms</option>
+      <option value="4+ Bedrooms">4+ Bedrooms</option>
+    </select>
+    <textarea name="Comments" placeholder="Additional notes"></textarea>
+    <button type="submit">Submit</button>
     <input type="text" name="_honey" style="display:none">
     <input type="hidden" name="_next" value="https://gunsboy77.github.io/AlbertaExpressMoving/thanks.html">
     <input type="hidden" name="_captcha" value="false">
   </form>
 </section>
-
-<!-- rest of site content and footer stays as-is -->
 
 <!-- Google Ads Conversion Tracking -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=AW-CONVERSION_ID"></script>
@@ -124,11 +79,7 @@
   function gtag(){dataLayer.push(arguments);}
   gtag('js', new Date());
   gtag('config', 'AW-CONVERSION_ID');
-
-  // Google Ads Remarketing
-  gtag('event', 'conversion', {
-    'send_to': 'AW-CONVERSION_ID/REMARKETING_LABEL'
-  });
+  gtag('event', 'conversion', {'send_to': 'AW-CONVERSION_ID/REMARKETING_LABEL'});
 </script>
 
 </body>
