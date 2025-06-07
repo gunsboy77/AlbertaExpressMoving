@@ -1,0 +1,1099 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="Alberta Express Moving - Edmonton's most trusted movers. Get a free quote for local and long-distance moving services. Licensed, insured, and 5-star rated.">
+  <title>Edmonton Movers | Alberta Express Moving | Free Quotes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <style>
+    :root {
+      --primary: #002244;
+      --primary-light: #003366;
+      --secondary: #00b14f;
+      --secondary-dark: #008c3a;
+      --accent: #ff6b00;
+      --accent-dark: #e05d00;
+      --light: #f8f9fa;
+      --lighter: #ffffff;
+      --dark: #212529;
+      --gray: #6c757d;
+      --light-gray: #e9ecef;
+      --shadow-sm: 0 1px 3px rgba(0,0,0,0.1);
+      --shadow-md: 0 4px 6px rgba(0,0,0,0.1);
+      --shadow-lg: 0 10px 15px rgba(0,0,0,0.1);
+      --transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+    
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: var(--light);
+      color: var(--dark);
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+    
+    /* Header with Trust Indicators */
+    header {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      color: white;
+      padding: 3rem 1rem 4rem;
+      text-align: center;
+      position: relative;
+      box-shadow: var(--shadow-md);
+    }
+    
+    .trust-badges {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+      margin-bottom: 1.5rem;
+    }
+    
+    .trust-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.9rem;
+      opacity: 0.9;
+    }
+    
+    .trust-badge i {
+      color: var(--secondary);
+    }
+    
+    .logo-wrapper {
+      background: var(--lighter);
+      padding: 1.5rem;
+      display: inline-block;
+      margin-bottom: 1.5rem;
+      border-radius: 16px;
+      box-shadow: var(--shadow-lg);
+      transition: var(--transition);
+    }
+    
+    .logo-wrapper:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+    }
+    
+    .logo {
+      height: 80px;
+      width: auto;
+      display: block;
+    }
+    
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+    
+    header p {
+      margin: 0.5rem auto 1.5rem;
+      font-size: 1.2rem;
+      max-width: 700px;
+      opacity: 0.9;
+      line-height: 1.7;
+    }
+    
+    .cta-buttons {
+      margin-top: 1.5rem;
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      flex-wrap: wrap;
+    }
+    
+    .cta-button {
+      background: var(--secondary);
+      color: white;
+      padding: 1rem 2rem;
+      text-decoration: none;
+      font-weight: 600;
+      border-radius: 50px;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      transition: var(--transition);
+      box-shadow: var(--shadow-sm);
+    }
+    
+    .cta-button:hover {
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .cta-button.primary {
+      background: var(--secondary);
+    }
+    
+    .cta-button.primary:hover {
+      background: var(--secondary-dark);
+    }
+    
+    .cta-button.secondary {
+      background: var(--accent);
+    }
+    
+    .cta-button.secondary:hover {
+      background: var(--accent-dark);
+    }
+    
+    /* Form Section with Conversion Optimization */
+    .form-section {
+      background: var(--lighter);
+      max-width: 700px;
+      margin: -3rem auto 3rem;
+      padding: 3rem;
+      box-shadow: var(--shadow-lg);
+      border-radius: 16px;
+      position: relative;
+      z-index: 1;
+    }
+    
+    .form-section h2 {
+      margin-bottom: 1.5rem;
+      text-align: center;
+      color: var(--primary);
+      font-size: 1.8rem;
+      position: relative;
+    }
+    
+    .form-section h2::after {
+      content: '';
+      position: absolute;
+      bottom: -12px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 60px;
+      height: 4px;
+      background: var(--secondary);
+      border-radius: 2px;
+    }
+    
+    .response-time {
+      text-align: center;
+      color: var(--secondary);
+      font-weight: 600;
+      margin: 1.5rem 0;
+      font-size: 1.1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    
+    .response-time i {
+      font-size: 1.2rem;
+    }
+    
+    .guarantee-badge {
+      background: rgba(0,177,79,0.1);
+      color: var(--secondary);
+      padding: 0.5rem 1rem;
+      border-radius: 50px;
+      font-size: 0.9rem;
+      font-weight: 600;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      margin: 0 auto 1.5rem;
+    }
+    
+    form {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+    }
+    
+    .form-group {
+      position: relative;
+    }
+    
+    .form-label {
+      display: block;
+      margin-bottom: 0.5rem;
+      font-weight: 500;
+      color: var(--primary);
+      font-size: 0.95rem;
+    }
+    
+    .form-control {
+      width: 100%;
+      padding: 1rem;
+      border: 2px solid var(--light-gray);
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: var(--transition);
+      font-family: 'Inter', sans-serif;
+    }
+    
+    .form-control:focus {
+      border-color: var(--secondary);
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(0,177,79,0.1);
+    }
+    
+    select.form-control {
+      appearance: none;
+      background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='currentColor' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+      background-repeat: no-repeat;
+      background-position: right 1rem center;
+      background-size: 1rem;
+    }
+    
+    .btn {
+      background: var(--secondary);
+      color: white;
+      border: none;
+      font-weight: 600;
+      cursor: pointer;
+      transition: var(--transition);
+      margin-top: 0.5rem;
+      font-size: 1.1rem;
+      padding: 1.2rem;
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+    }
+    
+    .btn:hover {
+      background: var(--secondary-dark);
+      transform: translateY(-3px);
+      box-shadow: var(--shadow-md);
+    }
+    
+    /* Enhanced Notes Section */
+    .notes-section {
+      margin: 2rem 0 1rem;
+      background: rgba(0,178,79,0.03);
+      padding: 1.5rem;
+      border-radius: 12px;
+      border: 1px dashed rgba(0,178,79,0.2);
+    }
+    
+    .notes-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem;
+    }
+    
+    .notes-label {
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 1rem;
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .notes-label i {
+      color: var(--secondary);
+    }
+    
+    .char-count {
+      font-size: 0.85rem;
+      color: var(--gray);
+      background: rgba(0,0,0,0.05);
+      padding: 0.25rem 0.5rem;
+      border-radius: 4px;
+    }
+    
+    .char-count.alert {
+      color: #dc3545;
+      background: rgba(220,53,69,0.1);
+    }
+    
+    .notes-placeholder {
+      color: var(--gray);
+      font-size: 0.9rem;
+      margin-bottom: 1rem;
+      line-height: 1.6;
+      padding-left: 1.5rem;
+      border-left: 3px solid var(--light-gray);
+    }
+    
+    .notes-textarea {
+      width: 100%;
+      padding: 1rem;
+      border: 2px solid var(--light-gray);
+      border-radius: 8px;
+      font-size: 1rem;
+      font-family: 'Inter', sans-serif;
+      min-height: 120px;
+      resize: none;
+      transition: var(--transition);
+      background: var(--lighter);
+    }
+    
+    .notes-textarea:focus {
+      border-color: var(--secondary);
+      outline: none;
+      box-shadow: 0 0 0 3px rgba(0,177,79,0.1);
+    }
+    
+    /* Services Section (New) */
+    .services {
+      background: var(--lighter);
+      padding: 4rem 1rem;
+      text-align: center;
+    }
+    
+    .services-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .service-card {
+      flex: 1;
+      min-width: 250px;
+      max-width: 350px;
+      background: white;
+      border-radius: 16px;
+      padding: 2rem;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      text-align: left;
+    }
+    
+    .service-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .service-icon {
+      width: 60px;
+      height: 60px;
+      background: rgba(0,177,79,0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      color: var(--secondary);
+      font-size: 1.5rem;
+    }
+    
+    .service-card h3 {
+      color: var(--primary);
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+    }
+    
+    .service-card p {
+      color: var(--gray);
+      line-height: 1.7;
+      font-size: 0.95rem;
+    }
+    
+    /* Features Section */
+    .features {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin: 5rem auto;
+      max-width: 1200px;
+    }
+    
+    .feature {
+      flex: 1;
+      min-width: 280px;
+      max-width: 350px;
+      padding: 2.5rem 2rem;
+      background: var(--lighter);
+      border-radius: 16px;
+      box-shadow: var(--shadow-sm);
+      transition: var(--transition);
+      text-align: center;
+    }
+    
+    .feature:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-lg);
+    }
+    
+    .feature-icon {
+      width: 70px;
+      height: 70px;
+      background: rgba(0,177,79,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto 1.5rem;
+      color: var(--secondary);
+      font-size: 1.75rem;
+      transition: var(--transition);
+    }
+    
+    .feature:hover .feature-icon {
+      background: var(--secondary);
+      color: white;
+      transform: scale(1.1);
+    }
+    
+    .feature h3 {
+      margin-bottom: 1rem;
+      color: var(--primary);
+      font-size: 1.3rem;
+    }
+    
+    .feature p {
+      color: var(--gray);
+      line-height: 1.7;
+    }
+    
+    /* Testimonials */
+    .testimonials {
+      background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+      padding: 5rem 1rem;
+      text-align: center;
+      color: white;
+    }
+    
+    .section-title {
+      font-size: 2rem;
+      margin-bottom: 4rem;
+      position: relative;
+    }
+    
+    .section-title::after {
+      content: '';
+      position: absolute;
+      bottom: -1rem;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 80px;
+      height: 4px;
+      background: var(--secondary);
+      border-radius: 2px;
+    }
+    
+    .testimonial-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+    
+    .testimonial-card {
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+      background: rgba(255,255,255,0.1);
+      padding: 2.5rem 2rem;
+      border-radius: 16px;
+      position: relative;
+      backdrop-filter: blur(5px);
+      transition: var(--transition);
+      text-align: left;
+    }
+    
+    .testimonial-card:hover {
+      transform: translateY(-5px);
+      background: rgba(255,255,255,0.15);
+    }
+    
+    .testimonial-card::before {
+      content: '\201C';
+      font-size: 5rem;
+      position: absolute;
+      top: -1.5rem;
+      left: 1rem;
+      color: rgba(255,255,255,0.1);
+      font-family: serif;
+      line-height: 1;
+    }
+    
+    .testimonial-text {
+      font-style: italic;
+      margin-bottom: 1.5rem;
+      position: relative;
+      line-height: 1.7;
+    }
+    
+    .testimonial-author {
+      font-weight: 600;
+      color: var(--secondary);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    
+    .rating {
+      color: #ffc107;
+      margin-bottom: 0.5rem;
+    }
+    
+    /* FAQ Section (New) */
+    .faq {
+      background: var(--lighter);
+      padding: 5rem 1rem;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    
+    .faq-item {
+      margin-bottom: 1.5rem;
+      border-bottom: 1px solid var(--light-gray);
+      padding-bottom: 1.5rem;
+    }
+    
+    .faq-question {
+      font-weight: 600;
+      color: var(--primary);
+      font-size: 1.1rem;
+      margin-bottom: 0.5rem;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    
+    .faq-question::after {
+      content: '+';
+      font-size: 1.5rem;
+      color: var(--secondary);
+    }
+    
+    .faq-answer {
+      color: var(--gray);
+      line-height: 1.7;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+    
+    .faq-item.active .faq-answer {
+      max-height: 300px;
+    }
+    
+    .faq-item.active .faq-question::after {
+      content: '-';
+    }
+    
+    /* Footer */
+    footer {
+      background: var(--dark);
+      color: white;
+      text-align: center;
+      padding: 4rem 1rem 2rem;
+    }
+    
+    .footer-content {
+      max-width: 1200px;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    
+    .footer-logo {
+      margin-bottom: 2rem;
+    }
+    
+    .footer-logo .logo {
+      height: 70px;
+    }
+    
+    .footer-links {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      margin-bottom: 2rem;
+    }
+    
+    .footer-links a {
+      color: white;
+      text-decoration: none;
+      transition: color 0.3s ease;
+    }
+    
+    .footer-links a:hover {
+      color: var(--secondary);
+    }
+    
+    .social-links {
+      display: flex;
+      gap: 1.5rem;
+      margin: 1.5rem 0 2rem;
+    }
+    
+    .social-link {
+      width: 45px;
+      height: 45px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: white;
+      font-size: 1.2rem;
+      transition: var(--transition);
+    }
+    
+    .social-link:hover {
+      background: var(--secondary);
+      transform: translateY(-3px);
+    }
+    
+    .copyright {
+      margin-top: 2rem;
+      opacity: 0.7;
+      font-size: 0.9rem;
+    }
+    
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      header {
+        padding: 2.5rem 1rem 3rem;
+      }
+      
+      header h1 {
+        font-size: 2rem;
+      }
+      
+      header p {
+        font-size: 1.1rem;
+      }
+      
+      .logo {
+        height: 70px;
+      }
+      
+      .form-section {
+        padding: 2rem;
+        margin: -2rem auto 2rem;
+      }
+      
+      .cta-buttons {
+        flex-direction: column;
+        gap: 0.75rem;
+      }
+      
+      .cta-button {
+        width: 100%;
+        justify-content: center;
+      }
+      
+      .feature, .service-card, .testimonial-card {
+        min-width: 100%;
+      }
+      
+      .services-container, .testimonial-container {
+        flex-direction: column;
+        align-items: center;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <div class="trust-badges">
+    <div class="trust-badge">
+      <i class="fas fa-check-circle"></i> Licensed & Insured
+    </div>
+    <div class="trust-badge">
+      <i class="fas fa-star"></i> 5-Star Rated
+    </div>
+    <div class="trust-badge">
+      <i class="fas fa-map-marker-alt"></i> Local Edmonton Movers
+    </div>
+  </div>
+  
+  <div class="logo-wrapper">
+    <img src="AEM_Logo.png" alt="Alberta Express Moving Logo" class="logo">
+  </div>
+  <h1>Edmonton's Most Trusted Moving Company</h1>
+  <p>Get a free, no-obligation quote for your local or long-distance move. Our professional team handles every detail with care.</p>
+  <div class="cta-buttons">
+    <a href="tel:587-926-0337" class="cta-button secondary">
+      <i class="fas fa-phone-alt"></i> Call Now: 587-926-0337
+    </a>
+    <a href="#quote-form" class="cta-button primary">
+      <i class="fas fa-file-alt"></i> Get My Free Quote
+    </a>
+  </div>
+</header>
+
+<section class="form-section" id="quote-form">
+  <h2>Request Your Free Moving Quote</h2>
+  <div class="response-time">
+    <i class="fas fa-clock"></i> We guarantee to respond within 8 business hours
+  </div>
+  <div class="guarantee-badge">
+    <i class="fas fa-shield-alt"></i> No hidden fees - 100% transparent pricing
+  </div>
+  <form action="https://formsubmit.co/alberta.expressmoving@gmail.com" method="POST">
+    <div class="form-group">
+      <label for="full-name" class="form-label">Full Name</label>
+      <input type="text" id="full-name" name="Full Name" class="form-control" placeholder="John Smith" required />
+    </div>
+    
+    <div class="form-group">
+      <label for="phone" class="form-label">Phone Number</label>
+      <input type="tel" id="phone" name="Phone" class="form-control" placeholder="(587) 555-1234" required />
+    </div>
+    
+    <div class="form-group">
+      <label for="email" class="form-label">Email Address</label>
+      <input type="email" id="email" name="email" class="form-control" placeholder="john@example.com" />
+    </div>
+    
+    <div class="form-group">
+      <label for="moving-date" class="form-label">Moving Date</label>
+      <input type="date" id="moving-date" name="Moving Date" class="form-control" required />
+    </div>
+    
+    <div class="form-group">
+      <label for="from-address" class="form-label">Moving From (Address)</label>
+      <input type="text" id="from-address" name="From Address" class="form-control" placeholder="123 Main St, Edmonton" required />
+    </div>
+    
+    <div class="form-group">
+      <label for="to-address" class="form-label">Moving To (Address)</label>
+      <input type="text" id="to-address" name="To Address" class="form-control" placeholder="456 Oak Ave, Edmonton" required />
+    </div>
+    
+    <div class="form-group">
+      <label for="bedrooms" class="form-label">Number of Bedrooms</label>
+      <select id="bedrooms" name="Bedrooms" class="form-control" required>
+        <option value="">Select an option</option>
+        <option value="1 Bedroom">1 Bedroom</option>
+        <option value="2 Bedrooms">2 Bedrooms</option>
+        <option value="3 Bedrooms">3 Bedrooms</option>
+        <option value="4+ Bedrooms">4+ Bedrooms</option>
+      </select>
+    </div>
+    
+    <!-- Enhanced Notes Section -->
+    <div class="notes-section">
+      <div class="notes-header">
+        <span class="notes-label">
+          <i class="fas fa-edit"></i> Additional Notes
+        </span>
+        <span id="char-count" class="char-count"><span id="char-remaining">1000</span> characters remaining</span>
+      </div>
+      <p class="notes-placeholder">
+        Let us know about special requirements, fragile items, parking restrictions, 
+        elevator access, or any other details that will help us serve you better.
+      </p>
+      <textarea 
+        id="notes" 
+        name="Comments" 
+        class="notes-textarea"
+        maxlength="1000"
+        oninput="updateCharCount(this)"
+      ></textarea>
+    </div>
+    
+    <button type="submit" class="btn">
+      <i class="fas fa-paper-plane"></i> Get My Free Quote
+    </button>
+    
+    <!-- Optional: Prevent spam -->
+    <input type="text" name="_honey" style="display:none">
+    <!-- Optional: Redirect after submission -->
+    <!--input type="hidden" name="_next" value="thank-you.html"-->
+    <input type="hidden" name="_next" value="https://gunsboy77.github.io/AlbertaExpressMoving/thanks.html">
+    <!-- Optional: Disable captcha -->
+    <input type="hidden" name="_captcha" value="false">
+  </form>
+<!-- Moving Price Calculator -->
+<div style="margin-top: 3rem;">
+  <h2 style="text-align:center; color: var(--primary); margin-bottom: 1rem;">Estimate Your Moving Cost</h2>
+  <div style="background: #fff; padding: 2rem; border-radius: 12px; box-shadow: var(--shadow-md); max-width: 600px; margin: 0 auto;">
+    <div class="form-group">
+      <label for="calc-bedrooms" class="form-label">Number of Bedrooms</label>
+      <select id="calc-bedrooms" class="form-control">
+        <option value="0">Select an option</option>
+        <option value="1">1 Bedroom</option>
+        <option value="2">2 Bedrooms</option>
+        <option value="3">3 Bedrooms</option>
+        <option value="4">4+ Bedrooms</option>
+      </select>
+    </div>
+
+    <div class="form-group">
+      <label for="calc-distance" class="form-label">Distance (in km)</label>
+      <input type="number" id="calc-distance" class="form-control" placeholder="e.g. 15" />
+    </div>
+
+    <div class="form-group">
+      <label class="form-label">
+        <input type="checkbox" id="calc-packing" />
+        Include Packing Services ($100 flat)
+      </label>
+    </div>
+
+    <button onclick="calculatePrice()" class="btn" style="width: 100%; margin-top: 1rem;">
+      <i class="fas fa-calculator"></i> Estimate Price
+    </button>
+
+    <div id="calc-result" style="margin-top: 1.5rem; font-weight: 600; font-size: 1.2rem; color: var(--secondary); text-align: center;"></div>
+  </div>
+</div>
+
+</section>
+
+<!-- New Services Section -->
+<section class="services">
+  <h2 class="section-title">Our Moving Services</h2>
+  <div class="services-container">
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-home"></i>
+      </div>
+      <h3>Residential Moving</h3>
+      <p>Stress-free moving for apartments, condos, and houses. We handle packing, loading, transport, and unloading with care.</p>
+    </div>
+    
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-building"></i>
+      </div>
+      <h3>Commercial Moving</h3>
+      <p>Minimize downtime with our efficient office relocation services. We work after hours to avoid business disruption.</p>
+    </div>
+    
+    <div class="service-card">
+      <div class="service-icon">
+        <i class="fas fa-boxes"></i>
+      </div>
+      <h3>Packing Services</h3>
+      <p>Professional packing using high-quality materials to ensure your belongings arrive safely at your new location.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Features Section -->
+<section class="features">
+  <div class="feature">
+    <div class="feature-icon">
+      <i class="fas fa-shield-alt"></i>
+    </div>
+    <h3>Licensed & Insured</h3>
+    <p>Your belongings are protected with our comprehensive insurance coverage and licensed professionals.</p>
+  </div>
+  <div class="feature">
+    <div class="feature-icon">
+      <i class="fas fa-map-marker-alt"></i>
+    </div>
+    <h3>Local Experts</h3>
+    <p>We know Edmonton inside out, ensuring the most efficient moving routes and solutions for your relocation.</p>
+  </div>
+  <div class="feature">
+    <div class="feature-icon">
+      <i class="fas fa-star"></i>
+    </div>
+    <h3>5-Star Rated Service</h3>
+    <p>Join hundreds of satisfied customers who've experienced our exceptional moving services.</p>
+  </div>
+</section>
+
+<!-- Testimonials Section -->
+<section class="testimonials">
+  <h2 class="section-title">What Our Customers Say</h2>
+  <div class="testimonial-container">
+    <div class="testimonial-card">
+      <div class="rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <p class="testimonial-text">Alberta Express made my move completely stress-free. The team was fast, polite, and very affordable. They handled all my fragile items with care and even helped with some last-minute packing.</p>
+      <div class="testimonial-author">
+        <i class="fas fa-user"></i> Amanda G., Edmonton
+      </div>
+    </div>
+    <div class="testimonial-card">
+      <div class="rating">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+      </div>
+      <p class="testimonial-text">Professional movers who truly care about your belongings. They went above and beyond to make sure everything arrived safely. The crew was punctual, efficient, and careful with all my furniture.</p>
+      <div class="testimonial-author">
+        <i class="fas fa-user"></i> Omar K., St. Albert
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- New FAQ Section -->
+<section class="faq">
+  <h2 class="section-title">Frequently Asked Questions</h2>
+  
+  <div class="faq-item">
+    <div class="faq-question">How much does moving cost in Edmonton?</div>
+    <div class="faq-answer">
+      <p>Moving costs vary based on distance, volume of items, and additional services. Our local moves typically range from $300-$800 for a 1-2 bedroom apartment. Get a free, no-obligation quote by filling out our form.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <div class="faq-question">What's included in your moving service?</div>
+    <div class="faq-answer">
+      <p>Our standard service includes loading, transportation, and unloading. We also offer packing services, furniture disassembly/reassembly, and specialty item handling for an additional fee.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <div class="faq-question">How far in advance should I book movers?</div>
+    <div class="faq-answer">
+      <p>We recommend booking at least 2-4 weeks in advance, especially during peak moving seasons (summer months and end of month). Last-minute moves may be accommodated based on availability.</p>
+    </div>
+  </div>
+  
+  <div class="faq-item">
+    <div class="faq-question">Do you provide packing materials?</div>
+    <div class="faq-answer">
+      <p>Yes, we offer high-quality packing materials including boxes, bubble wrap, and packing paper. These can be included in your moving package or purchased separately.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-content">
+    <div class="footer-logo">
+      <div class="logo-wrapper">
+        <img src="AEM_Logo.png" alt="Alberta Express Moving Logo" class="logo">
+      </div>
+    </div>
+    
+    <div class="footer-links">
+      <a href="#quote-form">Get a Quote</a>
+      <a href="#services">Services</a>
+      <a href="#testimonials">Reviews</a>
+      <a href="#faq">FAQ</a>
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+    </div>
+    
+    <div class="social-links">
+      <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+      <a href="#" class="social-link"><i class="fab fa-google"></i></a>
+    </div>
+    
+    <div class="copyright">
+      &copy; 2025 Alberta Express Moving. All rights reserved.<br>
+      Serving Edmonton and surrounding areas.
+    </div>
+  </div>
+</footer>
+
+<style>
+  /* Add this to your existing CSS */
+  .footer-logo .logo-wrapper {
+    background: white;
+    padding: 1rem;
+    border-radius: 12px;
+    display: inline-block;
+    margin-bottom: 1.5rem;
+  }
+  
+  .footer-logo .logo {
+    height: 60px;
+    width: auto;
+  }
+</style>
+
+
+<script>
+  // Character counter for notes
+  function updateCharCount(textarea) {
+    const remaining = 1000 - textarea.value.length;
+    const charCount = document.getElementById('char-count');
+    const charRemaining = document.getElementById('char-remaining');
+    
+    charRemaining.textContent = remaining;
+    
+    if (remaining < 100) {
+      charCount.classList.add('alert');
+    } else {
+      charCount.classList.remove('alert');
+    }
+  }
+  
+  // FAQ accordion functionality
+  document.querySelectorAll('.faq-question').forEach(question => {
+    question.addEventListener('click', () => {
+      const item = question.parentElement;
+      item.classList.toggle('active');
+    });
+  });
+  
+  // Smooth scrolling for anchor links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      
+      const targetElement = document.querySelector(targetId);
+      if (targetElement) {
+        window.scrollTo({
+          top: targetElement.offsetTop - 20,
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+  
+  
+function calculatePrice() {
+  const bedrooms = parseInt(document.getElementById("calc-bedrooms").value);
+  const distance = parseFloat(document.getElementById("calc-distance").value);
+  const packing = document.getElementById("calc-packing").checked;
+
+  if (!bedrooms || isNaN(distance) || distance <= 0) {
+    document.getElementById("calc-result").textContent = "Please enter valid bedroom and distance values.";
+    return;
+  }
+
+  const baseRates = { 1: 300, 2: 450, 3: 600, 4: 750 };
+  const base = baseRates[bedrooms] || 750;
+  const distanceCost = distance * 2;
+  const packingCost = packing ? 100 : 0;
+
+  const total = base + distanceCost + packingCost;
+  document.getElementById("calc-result").textContent = `Estimated Total: $${total.toFixed(2)} CAD`;
+}
+
+
+// Initialize character count on page load
+  document.addEventListener('DOMContentLoaded', function() {
+    const textarea = document.getElementById('notes');
+    if (textarea) {
+      updateCharCount(textarea);
+    }
+  });
+</script>
+
+</body>
+</html>
